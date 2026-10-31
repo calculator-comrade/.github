@@ -1,0 +1,50 @@
+name: Epic
+description: Track a larger goal across multiple stories and bugs.
+# Create the Epic issue type in organization settings before using this template.
+type: Epic
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Repository / Scope
+      description: Select the affected repositories, or General for organization-wide work.
+      multiple: true
+      options:
+        - calculator-comrade
+        - calculator-comrade-lib
+        - calculator-comrade-android-tests
+        - General / cross-repository
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the overall goal and its motivation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected Outcome
+      description: What will be achieved when the epic is complete?
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Dependencies, constraints, links, or implementation considerations.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: >
+        After creating the epic, use GitHub's **Create sub-issue** or
+        **Add existing issue** action to link Stories and Bugs.
+        The hierarchy and progress are managed by GitHub, not by this form.

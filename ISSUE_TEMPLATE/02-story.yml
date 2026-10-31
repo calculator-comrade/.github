@@ -1,0 +1,46 @@
+name: Story
+description: Propose a feature, improvement, or technical change.
+# Create the Story issue type in organization settings before using this template.
+type: Story
+body:
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Repository / Scope
+      description: Select the affected repositories, or General for organization-wide work.
+      multiple: true
+      options:
+        - calculator-comrade
+        - calculator-comrade-lib
+        - calculator-comrade-android-tests
+        - General / cross-repository
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done, and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation
+      description: Proposed approach, technical details, or notes. Can be completed later.
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this work is complete?
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: false
