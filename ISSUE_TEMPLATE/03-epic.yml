@@ -2,6 +2,7 @@ name: Epic
 description: Track a larger goal across multiple stories and bugs.
 # Create the Epic issue type in organization settings before using this template.
 type: Epic
+projects: ["calculator-comrade/2"]
 body:
   - type: dropdown
     id: scope

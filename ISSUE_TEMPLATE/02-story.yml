@@ -2,6 +2,7 @@ name: Story
 description: Propose a feature, improvement, or technical change.
 # Create the Story issue type in organization settings before using this template.
 type: Story
+projects: ["calculator-comrade/2"]
 body:
   - type: dropdown
     id: scope
