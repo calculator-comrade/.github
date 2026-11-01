@@ -1,7 +1,7 @@
 name: Bug Report
 # Reports a defect in existing behavior.
 description: Report a problem with existing behavior.
-type: bug
+type: Bug
 projects: ["calculator-comrade/2"]
 body:
   - type: dropdown
